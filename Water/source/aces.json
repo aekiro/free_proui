@@ -1,0 +1,104 @@
+﻿{
+	"": {
+		"conditions": [
+
+		],
+		"actions": [
+			{
+				"id": "applyForce",
+				"scriptName": "applyForce",
+				"highlight": true,
+				"params": [
+					{"id": "x", "type": "number"},
+					{"id": "force", "type": "number"},
+					{"id": "surface", "type": "number"}
+				]
+			},
+			{
+				"id": "setTension",
+				"scriptName": "SetTension",
+				"params": [
+					{"id": "tension", "type": "number"}
+				]
+			},
+			{
+				"id": "setDampening",
+				"scriptName": "SetDampening",
+				"params": [
+					{"id": "dampening", "type": "number"}
+				]
+			},
+			{
+				"id": "setSpread",
+				"scriptName": "SetSpread",
+				"params": [
+					{"id": "spread", "type": "number"}
+				]
+			},
+
+			{
+				"id": "setAutoWavesEnabled",
+				"scriptName": "SetAutoWavesEnabled",
+				"params": [
+					{"id": "autowaves", "type": "boolean"}
+				]
+			},
+			{
+				"id": "setWaveLength",
+				"scriptName": "SetWaveLength",
+				"params": [
+					{"id": "waveLength", "type": "number"}
+				]
+			},
+			{
+				"id": "setPeriod",
+				"scriptName": "SetPeriod",
+				"params": [
+					{"id": "period", "type": "number"}
+				]
+			},
+			{
+				"id": "setMagnitude",
+				"scriptName": "SetMagnitude",
+				"params": [
+					{"id": "magnitude", "type": "number"}
+				]
+			},
+			{
+				"id": "setSmoothing",
+				"scriptName": "SetSmoothing",
+				"params": [
+					{"id": "smoothing", "type": "boolean"}
+				]
+			}
+		],
+		"expressions": [
+			{
+				"id": "surfaceY",
+				"expressionName": "surfaceY",
+				"scriptName": "surfaceYAtX",
+				"highlight": false,
+				"params": [
+					{"id": "x", "type": "number"}
+				],
+				"returnType": "number"
+			},
+
+			{
+				"id": "isAutoWaveEnabled",
+				"expressionName": "isAutoWaveEnabled",
+				"scriptName": "isAutoWaveEnabled",
+				"highlight": false,
+				"returnType": "number"
+			},
+			{
+				"id": "isSmoothingON",
+				"expressionName": "isSmoothingON",
+				"scriptName": "isSmoothingON",
+				"highlight": false,
+				"returnType": "number"
+			}
+		]
+	}
+}
+

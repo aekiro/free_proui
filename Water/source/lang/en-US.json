@@ -1,0 +1,181 @@
+﻿{
+	"languageTag": "en-US",
+	"fileDescription": "Strings for Aekiro Water",
+	"text": {
+		"behaviors": {
+			"aekirowater": {
+				"name": "Water",
+				"description": "An example third-party behavior.",
+				"help-url": "https://www.later.com",
+				"properties": {
+					"liquidProps": {
+						"name": "Liquid Properties",
+						"desc": "Adjust the physical properties of the liquid"
+					},
+					"tension": {
+						"name": "Tension",
+						"desc": "Controls the stiffness of the water. Low values = loose water,  a force will cause large waves that oscillate slowly.  high values = Forces will create small waves that oscillate quickly = jiggling Jello."
+					},
+					"dampening": {
+						"name": "Dampening",
+						"desc": "A high dampening factor will make the water look thick like molasses, while a low value will allow the waves to oscillate for a long time."
+					},
+					"spread": {
+						"name": "Spread",
+						"desc": "controls how fast the waves spread."
+					},
+					"segmentWidth": {
+						"name": "Segment width",
+						"desc": "The width of a water segment in pixels."
+					},
+					"smoothing": {
+						"name": "Smoothing",
+						"desc": "Smooth out the surface (has no effects when mesh is used)",
+						"items": {
+						  "yes": "Yes",
+						  "no": "No"
+						}
+					},
+					"useMesh": {
+						"name": "Use mesh",
+						"desc": "Use mesh instead of segments",
+						"items": {
+						  "yes": "Yes",
+						  "no": "No"
+						}
+					},
+					"meshColumns": {
+						"name": "Mesh Columns",
+						"desc": "Number of mesh columns"
+					},
+					"meshRows": {
+						"name": "Mesh Rows",
+						"desc": "Number of mesh rows"
+					},
+					"autowaves": {
+						"name": "Auto Waves",
+						"desc": "Waves animation"
+					},
+					"isAutoWavesEnabled": {
+						"name": "Enable AutoWaves",
+						"desc": "Enable AutoWaves"
+					},
+					"waveLength": {
+						"name": "Wave Length",
+						"desc": "Wave Length in pixels"
+					},
+					"period": {
+						"name": "Period",
+						"desc": "Period in seconds"
+					},
+					"magnitude": {
+						"name": "Magnitude",
+						"desc": "Magnitude in pixels"
+					}
+				},
+				"aceCategories": {
+				},
+				"conditions": {
+					"is-moving": {
+						"list-name": "Is moving",
+						"display-text": "{my} is moving",
+						"description": "An example condition for the behavior."
+					}
+				},
+				"actions": {
+					"applyForce": {
+						"list-name": "Apply Force",
+						"display-text": "Apply Force = {1} at at X = {0} on surface = {2}",
+						"description": "Apply Force",
+						"params": {
+							"x": { "name":"X", "desc":"X"},
+							"force": { "name":"Force", "desc":"Force"},
+							"surface": { "name":"Surface", "desc":"Surface"}
+						}
+					},
+					"setTension": {
+						"list-name": "Set Tension",
+						"display-text": "Set Tension to {0}",
+						"description": "Set Tension",
+						"params": {
+							"tension": { "name":"Tension", "desc":"Tension"}
+						}
+					},
+					"setDampening": {
+						"list-name": "Set Dampening",
+						"display-text": "Set Dampening to {0}",
+						"description": "Set Dampening",
+						"params": {
+							"dampening": { "name":"Dampening", "desc":"Dampening"}
+						}
+					},
+					"setSpread": {
+						"list-name": "Set Spread",
+						"display-text": "Set Spread to {0}",
+						"description": "Set Spread",
+						"params": {
+							"spread": { "name":"Spread", "desc":"Spread"}
+						}
+					},
+					"setAutoWavesEnabled": {
+						"list-name": "Set AutoWaves",
+						"display-text": "Set AutoWaves to {0}",
+						"description": "Set AutoWaves",
+						"params": {
+							"autowaves": { "name":"Is Enabled", "desc":"Is Enabled"}
+						}
+					},
+					"setSmoothing": {
+						"list-name": "Set Smoothing",
+						"display-text": "Set Smoothing to {0}",
+						"description": "Set Smoothing",
+						"params": {
+							"smoothing": { "name":"Is Enabled", "desc":"Is Enabled"}
+						}
+					},
+					"setWaveLength": {
+						"list-name": "Set Wave Length",
+						"display-text": "Set Wave Length to {0}",
+						"description": "Set Wave Length",
+						"params": {
+							"waveLength": { "name":"Wave Length", "desc":"Wave Length"}
+						}
+					},
+					"setPeriod": {
+						"list-name": "Set Period",
+						"display-text": "Set Period to {0}",
+						"description": "Set Period",
+						"params": {
+							"period": { "name":"Period", "desc":"Period"}
+						}
+					},
+					"setMagnitude": {
+						"list-name": "Set Magnitude",
+						"display-text": "Set Magnitude to {0}",
+						"description": "Set Magnitude",
+						"params": {
+							"magnitude": { "name":"Magnitude", "desc":"Magnitude"}
+						}
+					}
+				},
+				"expressions": {
+					"surfaceY": {
+						"description": "Get Y of the surface point at X.",
+						"translated-name": "Surface Y",
+						"params": {
+							"x": { "name":"X", "desc":"X"}
+						}
+					},
+					"isAutoWaveEnabled": {
+						"description": "Returns 1 if AutoWave Enabled",
+						"translated-name": "isAutoWaveEnabled"
+					},
+					"isSmoothingON": {
+						"description": "Returns 1 if Smoothing is ON",
+						"translated-name": "isSmoothingON"
+					}
+				}
+			}
+		}
+	}
+}
